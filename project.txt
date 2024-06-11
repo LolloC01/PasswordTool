@@ -1,0 +1,7 @@
+Applicazione desktop che permetta di gestire delle password e con le seguenti funzioni:
+
+    - Generazione automatica di password univoche, efficaci ed efficienti
+        - Possibilità di modificare il comportamente della generazione automatica delle password
+    - Memorizzazione delle password in database cifrati
+    - Completa gestione ed associazione delle password ad applicazioni/siti e relativi username di accesso
+    - Possibilità di individuare vulnerabilità e ripetitizioni delle password

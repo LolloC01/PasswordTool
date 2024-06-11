@@ -1,0 +1,19 @@
+inserire account e password
+eliminare/modificare password
+visualizzo le password solo dopo aver effettuato l'accesso al mio account
+registrare nuovi utenti
+eliminare utenti
+recupero password utente
+per vedere le password in chiaro devo inserire un codice (uno per ogni utente)
+(criptare e decriptare password e profili diversi)
+
+
+interfaccia grafica:
+    - schermata di accesso utente:
+    -pulsante per aggiungere un nuovo utente
+    -pulsante per recuperare la password
+        -elenco profili (username e account) salvati per l'utente connesso
+        -pulsante per aggiungere
+        -pulsante per modificare
+        -pulsante per eliminare
+        -pulsante per visualizzare
