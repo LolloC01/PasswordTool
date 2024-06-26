@@ -6,24 +6,36 @@ PATH_DB = r"C:\Users\lorya\ElectronProjects\PasswordManager\data\PasswordManager
 
 class DBContextManager:
 
-def __init__(self, path: str) -> bool:
-    """Controlla se il database esiste
+    def __init__(self, db_name) -> None:
+        self.db_name = db_name
+        self.connection = None
 
-    Args:
-        path (str): percorso del database
+    def check_db(self, path: str) -> bool:
+        """Controlla se il database esiste
 
-    Returns:
-        bool:   TRUE -> Il DB esisteù
-                FALSE -> Il DB non esiste
-    """
-    file_path = pathlib.Path(path)
-    if file_path.exists():
-        print("Il file esiste!")
-        return True
-    else:
-        print("Il file non esiste!")
-        return False
+        Args:
+            path (str): percorso del database
 
+        Returns:
+            bool:   TRUE -> Il DB esisteù
+                    FALSE -> Il DB non esiste
+        """
+        file_path = pathlib.Path(path)
+        if file_path.exists():
+            print("Il file esiste!")
+            return True
+        else:
+            print("Il file non esiste!")
+            return False
+
+    def connect(self, db):
+        """
+        Si connette al database
+        """
+        if self.check_db(PATH_DB):
+            self.connection = f"Connessione al database {self.db_name}"
+            
+        
 
 
 def db_init() -> None:
